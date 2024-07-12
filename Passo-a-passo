@@ -1,0 +1,12 @@
+logica do rolê:
+
+1 - criar o maven 
+2 - criar o proto 
+3 - rodar o mavem para gerar as classes 
+4 - criar o service 
+5 - criar o servidor 
+
+para testar:
+
+1 inicializar o servidor
+2 rodar a classe client

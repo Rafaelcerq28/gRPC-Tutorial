@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+//nome do pacote
+option java_package = "com.test";
+
+//definindo o service
+service user{
+	//definindo o nome da api
+	//(todo metodo rpc deve ser atrelado a uma message)
+	rpc login(LoginRequest) returns(APIResponse);
+	rpc logout(Empty) returns(APIResponse);
+}
+//message do request da api
+message LoginRequest{
+	string username = 1;
+	string password = 2;
+}
+
+//message da response a api
+message APIResponse{
+	string responsemessage = 1;
+	int32 responseCode = 2;
+}
+
+//mensagem vazia (não passa parametros)
+message Empty{
+}
